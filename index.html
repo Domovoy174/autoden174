@@ -2,13 +2,454 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+  <link rel="manifest" href="./img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./css/normalize.css?ver=241220220001">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css?ver=241220220001">
+  <link rel="stylesheet" href="./css/style.css?ver=241220220001">
+  <link rel="stylesheet" href="./css/midea.css?ver=241220220001">
+  <script defer src="./js/swiper-bundle.min.js?ver=241220220001"></script>
+  <script defer src="./js/inputmask.js?ver=241220220001"></script>
+  <script defer src="./js/index.js?ver=241220220001"></script>
+  <title>AUTODEN174</title>
 </head>
 
-<body>
+<body class="body">
+  <header class="header">
+    <div class="header__container">
+      <div class="btn burger" id="nav-burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+      <nav class="nav" id="nav">
+        <ul class="list nav__list">
+          <li class="nav__item">
+            <a class="link nav__link" href="#hero">Главная</a>
+          </li>
+          <li class="link nav__item">
+            <a class="link nav__link" href="#service-desc">О&nbsp;компании</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#service">Наши услуги</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#advantage">Почемы&nbsp;мы</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#feedback">Отзывы</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#address">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section hero" id="hero">
+      <div class="container hero__container">
+        <div class="hero__head">
+          <img class="img hero__img logo" src="./img/logo.png" alt="logo">
+          <p class="paragraph location">
+            Челябинск, Троицкая&nbsp;ул.,&nbsp;2Г
+          </p>
+          <a class="link call" href="tel:+79518015801">8&nbsp;(951)&nbsp;801-5-801</a>
+          <button class="btn callback callback-send">
+            Обратный звонок
+          </button>
+        </div>
+        <h1 class="title hero__title">
+          Сервис Технического Осмотра ЛЮБЫХ&nbsp;АВТОМОБИЛЕЙ
+        </h1>
+        <ul class="list hero__list">
+          <li class="hero__item">
+            Диагностика и&nbsp;ремонтные работы
+          </li>
+          <li class="hero__item">
+            Техническое обслуживание
+          </li>
+          <li class="hero__item">
+            Автоэлектрика
+          </li>
+        </ul>
+        <button class="btn order callback-send">
+          Записаться на&nbsp;диагностику
+        </button>
+      </div>
+    </section>
+    <section class="section service-desc" id="service-desc">
+      <div class="container service-desc__container">
+        <ul class="list service-desc__list">
+          <li class="service-desc__item service-desc__item--img1">
+            <p class="paragraph service-desc__text">
+              Оперативная помощь в&nbsp;день обращения
+            </p>
+          </li>
+          <li class="service-desc__item service-desc__item--img2">
+            <p class="paragraph service-desc__text">
+              Любые виды диагностики и&nbsp;работ
+            </p>
+          </li>
+          <li class="service-desc__item service-desc__item--img3">
+            <p class="paragraph service-desc__text">
+              Гарантия 6&nbsp;месяцев на&nbsp;все выполненные работы
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section service" id="service">
+      <div class="container service__container">
+        <h2 class="title service__title">
+          Услуги нашего автосервиса
+        </h2>
+        <hr class="line">
+        <h3 class="title subtitle">
+          Мы&nbsp;&mdash; автосервис AUTODEN174, обслуживаем и&nbsp;ремонтируем автомобили
+        </h3>
+        <ul class="list service__list">
+          <li class="service__item">
+            <img class="img service__img" src="./img/service__img-1.webp" alt="Ремонт автомобиля">
+            <div class="service__col">
+              <ul class="list service__desc">
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Техническое&nbsp;обслуживание автомобиля
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Замена масла и&nbsp;других жидкостей
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Замена фильтров
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Диагностика&nbsp;автомобиля
+                  </p>
+                </li>
+              </ul>
+              <button class="btn order service__btn callback-send">
+                Записаться
+              </button>
+            </div>
+          </li>
+          <li class="service__item">
+            <img class="img service__img" src="./img/service__img-2.webp" alt="Ремонт автомобиля">
+            <div class="service__col">
+              <ul class="list service__desc">
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Поиск&nbsp;неисправностей и ремонт автопроводки
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Установка&nbsp;и&nbsp;ремонт сигнализации и другого оборудования
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Замена лампочек
+                  </p>
+                </li>
+              </ul>
+              <button class="btn order service__btn callback-send">
+                Записаться
+              </button>
+            </div>
+          </li>
+          <li class="service__item">
+            <img class="img service__img" src="./img/service__img-3.webp" alt="Ремонт автомобиля">
+            <div class="service__col">
+              <ul class="list service__desc">
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Диагностика&nbsp;и&nbsp;ремонт ходовой части
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Диагностика&nbsp;и&nbsp;ремонт подвески
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    &ndash;&nbsp;Ремонт ДВС и КПП
+                  </p>
+                </li>
+              </ul>
+              <button class="btn order service__btn callback-send">
+                Записаться
+              </button>
+            </div>
+          </li>
+          <li class="service__item">
+            <div class="service__col">
+              <ul class="list service__desc service__desc--size">
+                <li class="service__desc-item">
+                  <p class="paragraph service__text service__text--color">
+                    Не&nbsp;нашли подходящую услугу?
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <p class="paragraph service__text">
+                    Напишите нам или позвоните по&nbsp;номеру
+                  </p>
+                </li>
+                <li class="service__desc-item">
+                  <a class="link call service__call" href="tel:+79518015801">8 951 801 5 801</a>
+                </li>
+              </ul>
+              <button class="btn order service__btn callback-send">
+                Записаться
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section reception">
+      <div class="container reception__container">
+        <h2 class="title reception__title">
+          Запишитесь на&nbsp;сервис или задайте вопрос
+        </h2>
+        <div class="form reception__form">
+          <input class="reception__input" type="text" name="name" id="name" placeholder="Имя">
+          <input class="reception__input" type="text" name="phone" id="phone" placeholder="Номер телефона">
+          <label class="reception__label" for="comment">Вопрос</label>
+          <textarea class="reception__input" name="comment" id="comment" cols="30" rows="2">
+          </textarea>
+          <button class="btn order reception__btn" id="btnform">
+            Отправить
+          </button>
+        </div>
+        <p class="paragraph politic">
+          Нажимая на&nbsp;кнопку, Вы&nbsp;принимаете Согласие и&nbsp;Положение на&nbsp;обработку персональных данных
+        </p>
+      </div>
+    </section>
+    <section class="section advantage" id="advantage">
+      <div class="container advantage__container">
+        <h2 class="title advantage__title">
+          В&nbsp;чём преимущества нашего автосервиса
+        </h2>
+        <hr class="line">
+        <h3 class="title subtitle advantage__subtitle">
+          Мы&nbsp;&mdash; автосервис AUTODEN174, обслуживаем и&nbsp;ремонтируем автомобили
+        </h3>
+        <div class="service-desc">
+          <ul class="list service-desc__list">
+            <li class="service-desc__item service-desc__item--col service-desc__item--img4">
+              <p class="paragraph service-desc__text">
+                Не&nbsp;навязываем дополнительных услуг.
+                Можете присутствовать при диагностике
+                вашего автомобиля..
+              </p>
+            </li>
+            <li class="service-desc__item service-desc__item--col service-desc__item--img5">
+              <p class="paragraph service-desc__text">
+                Отремонтируем&nbsp;то, что
+                другие меняют. При сложных ситуациях
+                подбираем запчасти, которые подходят
+                с&nbsp;других автомобилей.
+              </p>
+            </li>
+            <li class="service-desc__item service-desc__item--col service-desc__item--img6">
+              <p class="paragraph service-desc__text">
+                Подскажем, на&nbsp;чем можно сэкономить, а&nbsp;какой
+                ремонт может подождать, чтобы к&nbsp;нему можно
+                было спокойно подготовится.
+              </p>
+            </li>
+            <li class="service-desc__item service-desc__item--col service-desc__item--img7">
+              <p class="paragraph service-desc__text">
+                Капля масло под капотом&nbsp;&mdash; не&nbsp;повод разбирать двигатель, а&nbsp;трещина на
+                салейтблоке&nbsp;&mdash; ремонтировать всю подвеску.
+              </p>
+            </li>
+            <li class="service-desc__item service-desc__item--col service-desc__item--img8">
+              <p class="paragraph service-desc__text">
+                Говорим на&nbsp;понятном языке, чтобы вы&nbsp;понимали, что происходит с&nbsp;вашей машиной.
+              </p>
+            </li>
+            <li class="service-desc__item service-desc__item--col service-desc__item--img9">
+              <p class="paragraph service-desc__text">
+                Опытные механики&nbsp;&mdash; мастера своего дела. Всегда рады вам оказать помощь
+                по&nbsp;всем вопросам вашего авто.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section promo">
+      <div class="container promo__container">
+        <h2 class="title promo__title">
+          Акция
+        </h2>
+        <p class="paragraph promo__desc">
+          <span class="promo__desc promo__desc--color">СКИДКА 15%</span> НА&nbsp;ПЕРВОЕ ПОСЕЩЕНИЕ:
+          ремонт,&nbsp;диагностику&nbsp;или&nbsp;обслуживание
+        </p>
+        <button class="btn order promo__btn callback-send">Записаться</button>
+      </div>
+    </section>
+    <section class="section feedback" id="feedback">
+      <div class="container feedback__container">
+        <h2 class="title feedback__title">
+          Отзывы наших клиентов
+        </h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="comment">
+                <img class="img comment__img" src="./img/commit__img-1.webp" alt="Фото рабочей зоны">
+                <div class="comment__profil user">
+                  <img class="img user__img" src="./img/avatar.png" alt="Фото пользователя">
+                  <p class="paragraph user__name">
+                    tuma174
+                  </p>
+                </div>
+                <p class="paragraph comment__desc">
+                  Обратился в&nbsp;автосервис с&nbsp;проблемой: не&nbsp;работал подогрев водителського автосидения,
+                  в&nbsp;ходе
+                  диагностики мастер выявил несипрваность, оперативно устранил. Работой довольна, подогрев работает.
+                  Дополнительно отмечу: доброжелательный мастер, советую всем, у&nbsp;кого есть потребность
+                  в&nbsp;диагностике
+                  и&nbsp;ремонте автомобиля.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="comment">
+                <img class="img comment__img" src="./img/commit__img-2.webp" alt="Фото рабочей зоны">
+                <div class="comment__profil user">
+                  <img class="img user__img" src="./img/avatar.png" alt="Фото пользователя">
+                  <p class="paragraph user__name">
+                    Юрий Noise
+                  </p>
+                </div>
+                <p class="paragraph comment__desc">
+                  Отлично. Поменяли тормозные колодки и&nbsp;передние и&nbsp;задние, заодно дал рекомендации
+                  по&nbsp;дальнейшей
+                  эксплуатации моего авто. Очень хороший сервис.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="comment">
+                <img class="img comment__img" src="./img/commit__img-3.webp" alt="Фото рабочей зоны">
+                <div class="comment__profil user">
+                  <img class="img user__img" src="./img/avatar.png" alt="Фото пользователя">
+                  <p class="paragraph user__name">
+                    Александр ЗАМ
+                  </p>
+                </div>
+                <p class="paragraph comment__desc">
+                  Поменял масло. Хорошая работа.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="comment">
+                <img class="img comment__img" src="./img/commit__img-4.webp" alt="Фото рабочей зоны">
+                <div class="comment__profil user">
+                  <img class="img user__img" src="./img/avatar.png" alt="Фото пользователя">
+                  <p class="paragraph user__name">
+                    Дмитрий Смольников
+                  </p>
+                </div>
+                <p class="paragraph comment__desc">
+                  Здравствуйте, обращался и&nbsp;не&nbsp;раз к&nbsp;ребятам, делают все правильно!! Помогут, подскажет,
+                  меня тоже раз
+                  выручали, влад и&nbsp;денис, два опытных автомеханикаю&nbsp;Им огромное спасибо,всем советую удачи!!!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <address class="address" id="address">
+        <p class="paragraph address__title">
+          Где мы&nbsp;находимся
+        </p>
+        <hr class="line">
+        <div class="address__location">
+          <iframe class="address__map" id="map_88223903" frameborder="0" width="400px" height="400px"
+            sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation">
+
+          </iframe>
+          <script type="text/javascript">(function (e, t) { var r = document.getElementById(e); r.contentWindow.document.open(), r.contentWindow.document.write(atob(t)), r.contentWindow.document.close() })("map_88223903", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzAyODFmMiIsInRpdGxlIjoiIiwiZGVzY3JpcHRpb24iOiJQSEErMEpEUXN0R0MwTDdSZ2RDMTBZRFFzdEM0MFlFOEwzQSsiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzYxLjM3NjIwNyw1NS4xMjU2MjddfSwiaWQiOjY3NX1dLCJtYXBQb3NpdGlvbiI6eyJsYXQiOjU1LjEyNDk1NjE5NDM5Mjk0NCwibG9uIjo2MS4zNzM3NDg3NzkyOTY4OCwiem9vbSI6MTZ9LCJpc1doZWVsWm9vbUVuYWJsZWQiOnRydWV9Jyk8L3NjcmlwdD48c2NyaXB0IGFzeW5jPSIiIHR5cGU9InRleHQvamF2YXNjcmlwdCIgc3JjPSJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPVVBLTE1ODg2NjE2OC0xIj48L3NjcmlwdD48c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+KGZ1bmN0aW9uKGUpe2Z1bmN0aW9uIHQoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpfXdpbmRvdy5kYXRhTGF5ZXI9d2luZG93LmRhdGFMYXllcnx8W10sdCgianMiLG5ldyBEYXRlKSx0KCJjb25maWciLGUpLHdpbmRvdy5ndGFnPXR9KSgnVUEtMTU4ODY2MTY4LTEnKTwvc2NyaXB0PjwvYm9keT4=")
+          </script>
+
+          <div class="address__desc">
+            <a class="link address__link" href="https://2gis.ru/chelyabinsk/geo/70000001065537450">Адрес:
+              ул.&nbsp;Троицкая, д&nbsp;2Г</a>
+            <a class="link address__link" href="mailto:den.747@mail.ru">Email: den.747@mail.ru</a>
+            <a class="link address__link" href="tel:+79518015801">Телефон: 8 (951) 801 5 801</a>
+            <button class="btn callback callback-send">Обратный звонок</button>
+            <ul class="list address__list">
+              <li class="address__item">
+                <a class="link address__social" href="https://vk.com/autoden174">
+                  <img class="img address__img" src="./img/vk.png" alt="Вконтакте">
+                </a>
+              </li>
+              <li class="address__item">
+                <a class="link address__social" href="https://instagram.com/autoden174/">
+                  <img class="img address__img" src="./img/instagarm.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="address__item">
+                <a class="link address__social" href="https://wa.me/79518015801">
+                  <img class="img address__img" src="./img/whatsapp.png" alt="WhatsApp">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </address>
+      <a class="link alekstech" href="https://alekstech.ru">
+        AleksTech&copy;2022
+      </a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal"></div>
+
+  <form class="form-hidden" method="post" action="./send.php">
+    <input type="hidden" class="form-hidden__input" id="form-hidden-name" name="name">
+    <input type="hidden" class="form-hidden__input" id="form-hidden-phone" name="phone">
+    <input type="hidden" class="form-hidden__input" id="form-hidden-comment" name="comment">
+  </form>
 
 </body>
 
