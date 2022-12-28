@@ -1,5 +1,7 @@
 <?php
 
+$txt = '';
+$new_url = '';
 $path_dev = 'dev.ini';
 $path_prod = 'prod.ini';
 
@@ -39,19 +41,19 @@ try {
         'r'
     );
 } catch (\Exception $e) {
-    $new_url = '/?send=false';
+    $new_url = 'index.html?send=false';
     header('Location: ' . $new_url);
     exit();
 }
 //We display a message about successful sending
 if ($sendToTelegram) {
-    $new_url = '/?send=true';
+    $new_url = 'index.html?send=true';
     header('Location: ' . $new_url);
     exit();
 }
 //We display an error message when sending
 else {
-    $new_url = '/?send=false';
+    $new_url = 'index.html?send=false';
     header('Location: ' . $new_url);
     exit();
 }
