@@ -103,10 +103,10 @@
   const phoneClient = document.querySelector('#phone');
   const nameClient = document.querySelector('#name');
   const commentClient = document.querySelector('#comment');
-  const mas = new Inputmask("+7(999) 99-999-99");
+  const mas = new Inputmask("+9(999) 99-999-99");
   mas.mask(phoneClient);
   buttonForm.addEventListener('click', (element) => {
-    let phone = Inputmask.unmask(phoneClient.value, { mask: "+7(999) 99-999-99" });
+    let phone = Inputmask.unmask(phoneClient.value, { mask: "+9(999) 99-999-99" });
     let name = nameClient.value.trim();
     let comment = commentClient.value.trim();
     const el = element.target;
@@ -171,7 +171,7 @@
     buttonCancel.innerText = "Отмена";
     buttonClose.classList.add('btn-close');
     buttonSend.addEventListener('click', (element) => {
-      let phone = Inputmask.unmask(userPhone.value, { mask: "+7(999) 99-999-99" });
+      let phone = Inputmask.unmask(userPhone.value, { mask: "+9(999) 99-999-99" });
       let name = userName.value.trim();
       let comment = userComment.value.trim();
       const el = element.target;
